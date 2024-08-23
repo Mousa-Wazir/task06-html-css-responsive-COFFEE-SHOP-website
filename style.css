@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    
+}
+
+:root{
+    --orange-color:#ff7800;
+    --black-color:#130f40;
+    --light-color:#666;
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:2rem solid var(var(--black-color));
+}
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.395) rgba(255,255,255,0.395)),url(../task06-html-css-responsive-COFFEE-SHOP-website/background\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins' , sans-serif ;
+    color: rgba(75,38,20);
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+    padding-left: 40px;
+}
+.anchor-tags{
+    margin-top: 20px;
+    padding-left: 60px;
+    
+}
+.anchor-tags a{
+    color: rgba(75,38,20);
+    background-color: #ffffff6b;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+/* small 1000px */
+@media(max-width:1000px){
+    #logo img{
+        width: 70px;
+        height: 70px;
+        padding-left: 30px;
+    }
+    .anchor-tags{
+        padding-right: 50px;
+        }
+        .anchor-tags a{
+            padding:  10px 10px;
+        }
+    }
+
+    /* tabs */
+
+    @media(max-width:700px){
+        #logo img{
+            height: 60px;
+            width: 60px;
+        }
+        .anchor-tags a{
+            font-size: 2.7vh;
+            padding:  5px ;
+
+        }
+    }
+/* mobile  */
+@media(max-width:420px){
+    #logo img{
+        height: 50px;
+        width: 50px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    .anchor-tags{
+        padding-right: 10px;
+
+    }
+    .anchor-tags a{
+        padding:  5px 5px;
+        font-size: 1.6vh;
+    }
+}

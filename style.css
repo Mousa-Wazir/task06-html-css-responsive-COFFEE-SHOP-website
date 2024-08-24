@@ -56,6 +56,87 @@ nav{
     padding: 12px 20px;
 }
 
+/* home */
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+.home-heading{
+    padding: 150px 70px;
+}
+.home-heading h1{
+    font-size: 45px;
+}
+h1 em{
+    font-size: 60px;
+    font-style: normal;
+}
+.home-heading p{
+    padding:  5px 0;
+}
+.home-heading button{
+    color: rgba(75,38,20);
+    border: 1px solid rgba(75,38,20);
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+
+}
+.offer{
+    margin-top: -90px;
+    margin-left: -100px;
+}
+.offer img{
+    width: 400px;
+}
+.home-image{
+    width: 400px;
+}
+.home-image{
+    position: relative;
+    animation: move 1s both;
+}
+@keyframes move{
+    from{right:0px;}
+    to{right:100px;}
+}
+
+/* coffee */
+.coffee-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+ .coffee-container .coffee-cup{
+    width: 190px;
+    height: 200px;
+    border-radius: 10px ;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.265) , rgba(0,0,0,0.265)), url(./back4.jpg);
+    background-size: cover;
+}
+
+.coffee-cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+
+.coffee-cup h2{
+    margin-top: -15px;
+
+}
+
+.coffee-cup p{
+    font-size:13px ;
+    padding: 5px;
+} 
 /* small 1000px */
 @media(max-width:1000px){
     #logo img{
@@ -69,7 +150,40 @@ nav{
         .anchor-tags a{
             padding:  10px 10px;
         }
+
+         /* home */
+    .home-heading{
+        padding: 150px 50px;
     }
+    .home-heading h1{
+       font-size: 35px;
+
+    }
+    h1 em{
+        font-size: 50px;
+
+    }
+    .home-heading button{
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+    }
+    .offer img{
+        width: 300px;
+        .home-image img{
+            width: 300px;
+        }
+        
+    }
+    @keyframes moves {
+        from {right:0px;}
+        to {right:50px;}
+    }
+   
+
 
     /* tabs */
 
@@ -83,6 +197,41 @@ nav{
             padding:  5px ;
 
         }
+       .home-heading{
+        padding: 150px 20px;
+       } 
+       .home-heading h1{
+        font-size: 25px;
+       }
+       h1 em{
+        font-size: 40px;
+       }
+       .home-heading img{
+        width: 15px;
+        padding:  5px;
+
+       }
+       .home-heading a{
+        font-size: small;
+       }
+       .home-heading button{
+        padding: 5px;
+       }
+       .offer{
+        margin-top: -70px;
+        margin-left: -70px;
+       }
+       .offer img{
+        width: 300px;
+
+       }
+       .home-heading img{
+        width: 300px;
+       }
+       @keyframes moves {
+        from {right:0}
+        to {right:5%}
+       }
     }
 /* mobile  */
 @media(max-width:420px){
@@ -90,14 +239,56 @@ nav{
         height: 50px;
         width: 50px;
         padding-left: 10px;
-        margin-top: 5px;
+       
     }
     .anchor-tags{
         padding-right: 10px;
+        margin-top: 5px;
 
     }
     .anchor-tags a{
         padding:  5px 5px;
         font-size: 1.6vh;
     }
+   
+
+.home-heading{
+    padding: 60px 20px;
+   } 
+   .home-heading h1{
+    font-size: 3vh;
+   }
+   h1 em{
+    font-size: 4vh;
+   }
+   .home-heading img{
+    width: 10px;
+    padding:  2px;
+    margin: 8px 0;
+    margin-bottom:  0;
+
+   }
+   .home-heading a{
+    font-size: 1.3vh;
+   }
+   .home-heading button{
+    padding: 2px;
+    margin-left: 5px;
+    font-size:  1.3vh;
+   }
+   .offer{
+    margin-top: -40px;
+    
+   }
+   .offer img{
+    width: 140px;
+
+   }
+  
+   }
+   @keyframes moves {
+    from {right:0}
+    to {right:5%}
+   }
 }
+

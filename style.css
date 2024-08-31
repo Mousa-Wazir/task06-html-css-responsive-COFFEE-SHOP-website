@@ -106,9 +106,15 @@ h1 em{
 /* coffee */
 .coffee-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 40px;
+    padding: 22px;
+    flex-wrap: wrap;
 
+}
+
+#heading {
+    padding:22px;
 }
  .coffee-container .coffee-cup{
     width: 190px;
@@ -121,7 +127,7 @@ h1 em{
 }
 
 .coffee-cup img{
-    width: 150px;
+    width: 153px;
     height: 130px;
     position: relative;
     top: -40px;
@@ -130,12 +136,15 @@ h1 em{
 
 .coffee-cup h2{
     margin-top: -15px;
+    font-size: 1.5rem;
+    color: aliceblue;
 
 }
 
 .coffee-cup p{
     font-size:13px ;
     padding: 5px;
+    color: azure;
 } 
 /* small 1000px */
 @media(max-width:1000px){
